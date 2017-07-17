@@ -1,0 +1,6 @@
+<?php 
+	function from($date) {
+		$dt = DateTimeImmutable::createFromMutable($date); 
+		return $dt->add( new DateInterval('PT1000000000S') );
+	}
+?>
